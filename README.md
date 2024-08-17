@@ -8,3 +8,8 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ```
 git clone https://github.com/Ez4T/nvim.git ~/.config/nvim
 ```
+
+# You will need to install the `fzf` and `fd` packages with the Homebrew 
+```
+brew install fzf fd
+```
