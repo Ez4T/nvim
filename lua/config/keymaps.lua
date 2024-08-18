@@ -20,5 +20,9 @@ keymap.set("n", "sk", "<C-w>k")
 keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
 
+-- move cursor
 keymap.set("n", "gs", "^")
 keymap.set("n", "ge", "$")
+
+-- buffer
+keymap.set("n", "bd", ":bd<Return>", opts)
