@@ -21,8 +21,8 @@ keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
 
 -- move cursor
-keymap.set("n", "gs", "^")
-keymap.set("n", "ge", "$")
+keymap.set("n", "gs", "^", opts)
+keymap.set("n", "ge", "$", opts)
 
 -- buffer
 keymap.set("n", "bd", ":bd<Return>", opts)
