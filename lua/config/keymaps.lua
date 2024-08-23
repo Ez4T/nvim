@@ -4,7 +4,6 @@
 
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
-
 -- New tab
 keymap.set("n", "te", ":tabedit")
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
@@ -25,4 +24,4 @@ keymap.set("n", "gs", "^", opts)
 keymap.set("n", "ge", "$", opts)
 
 -- buffer
-keymap.set("n", "bd", ":bd<Return>", opts)
+keymap.set("n", "bd", ":bdelete<Return>", opts)
