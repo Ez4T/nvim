@@ -65,3 +65,9 @@ require("null-ls").setup({
     client.server_capabilities.documentFormattingProvider = false
   end,
 })
+
+require("fzf-lua").setup({
+  fzf_opts = {
+    ["--ignore-case"] = "",
+  },
+})
