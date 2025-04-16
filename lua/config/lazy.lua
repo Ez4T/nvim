@@ -18,7 +18,6 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    { "fcancelinha/nordern.nvim", branch = "master", priority = 1000 },
     -- import/override with your plugins
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
@@ -60,3 +59,9 @@ require("lazy").setup({
 })
 
 require("gitsigns").setup()
+
+require("null-ls").setup({
+  on_attach = function(client)
+    client.server_capabilities.documentFormattingProvider = false
+  end,
+})
